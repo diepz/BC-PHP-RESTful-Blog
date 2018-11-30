@@ -29,7 +29,7 @@ class BlogController extends Controller
         return response()->json($blog, 200);
     }
 
-    public function delete(Request $blog)
+    public function delete(Blog $blog)
     {
         $blog->delete();
 
